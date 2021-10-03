@@ -91,6 +91,7 @@ class Tracker:
         inputs:
             maximum_distance_to_assign : int -> The reference we will use as maximum distance in order to avoid assignments between positions too far.
             maximum_frames_to_skip_before_set_trace_as_inactive : int -> The amount of frames we will allow to be skkiped by a trace before setting it as inactive. 
+            value_to_use_as_inf : int -> The value to use instead of infinite as "very large value" in order to avoid numerical problems.
         """
         self.active_traces = []                                         # Active traces.
         self.inactive_traces = []                                       # Old traces. self.active_traces and self.inactive_traces should be disjoint sets.
