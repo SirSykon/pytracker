@@ -1,5 +1,5 @@
 import numpy as np
-from tracker import Tracker
+from pytracker.tracker import Tracker
 import random
 import matplotlib.pyplot as plt
 
